@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Run</title>
+  </head>
+  <body>
+    <script>
+    solution("hi12392");
+    function solution(array) {
+    var answer = [];
+    
+    for(let i=0; i<array.length; i++){
+      const item = Number(array[i]);
+      if(isNaN(item)){
+        continue;
+      }
+      answer.push(item);
+    }
+    return answer.sort((a,b)=>a-b);
+}
+    </script>
+  </body>
+</html>
